@@ -1,0 +1,124 @@
+.mainContainer {
+  display: flex;
+}
+
+.leftContainer {
+  height: 100vh;
+  width: 40vw;
+  background: url(../public/background.png) center/cover;
+}
+.rightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 60vw;
+  background-color: #161d28;
+}
+
+.connection {
+  display: flex;
+  flex-direction: column;
+
+  height: 500px;
+  width: 500px;
+}
+
+.connection img {
+  margin: 25px 25px 0 25px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+}
+
+.connection h1 {
+  font-size: 4rem;
+  margin: 15px 25px;
+  font-family: Mont Heavy, sans-serif;
+}
+
+.connection h3 {
+  font-size: 1.8rem;
+  margin: 10px 25px;
+  font-family: Mont Heavy, sans-serif;
+}
+.connection p {
+  font-weight: 500;
+}
+
+.btnContainer {
+  display: block;
+  margin: 0 75px;
+  padding: 20px;
+}
+.signupBtn {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #1d9bf0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px;
+}
+.signinBtn {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #1d9bf0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.modal {
+  padding: 0;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  height: 500px;
+  background-color: #161d28;
+  border: none;
+  outline: none;
+  padding: 0px;
+  margin: -30px;
+  border-radius: 25px;
+}
+
+.modalContainer img {
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+  margin: 30px 0 0px 0;
+}
+
+.modalContainer h2 {
+  font-size: 1.8rem;
+}
+
+.modalContainer input {
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 10px;
+  height: 40px;
+  width: 60%;
+}
+
+.modalContainer button {
+  height: 30px;
+  width: 150px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin: 20px 0;
+  cursor: pointer;
+}

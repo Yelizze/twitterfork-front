@@ -1,0 +1,48 @@
+.modal {
+  padding: 0;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  height: 500px;
+  background-color: #161d28;
+  border: none;
+  outline: none;
+  padding: 0px;
+  margin: -30px;
+  border-radius: 25px;
+}
+
+.modalContainer img {
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+  margin: 30px 0 0px 0;
+}
+
+.modalContainer h2 {
+  font-size: 1.8rem;
+}
+
+.modalContainer input {
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 10px;
+  height: 40px;
+  width: 60%;
+}
+
+.modalContainer button {
+  height: 30px;
+  width: 150px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin: 20px 0;
+  cursor: pointer;
+}
