@@ -6,3 +6,4 @@
 - couleur de fond des cards: #1B222D
 - couleur de texte des tags et text input entre autres: #2E3746
 - couleur de texte des hashtags : #4A87CB
+- couleur de quand on like: #F7317C
