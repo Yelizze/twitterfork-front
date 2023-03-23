@@ -8,3 +8,8 @@ body {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+	font-family: "Mont Heavy";
+	src: url("/fonts/Mont-Heavy.otf");
+}
