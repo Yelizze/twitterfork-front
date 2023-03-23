@@ -1,0 +1,29 @@
+.profilePic {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.tweetRow {
+    border-top: 1px solid #778193;
+    padding: 20px 10px;
+}
+.userHeader {
+    display: flex;
+    align-items: center;
+}
+.userName {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.userTag {
+    color: #778193;
+}
+.hashtag {
+    color: #1DA1F2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.likeCount {
+    margin-left: 5px;
+}
