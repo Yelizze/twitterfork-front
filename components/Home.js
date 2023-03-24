@@ -1,14 +1,21 @@
 import styles from '../styles/Home.module.css';
 import Image from "next/image";  
 import Tweet from '../components/Tweet'
+import LastTweet from '../components/LastTweet'
 import LogOut from '../components/LogOut';
 import { useState } from 'react';
+import { deleteAllTweets, newTweet } from '../reducers/tweets';
+import { useDispatch, useSelector } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
+  const dispatch = useDispatch()
   const [message, setMessage] = useState('');
+  const tweets = useSelector((state) => state.tweets.value)
 
-  let alertLimitCharacters
 
+  let alertLimitCharacters;
   if (message.length > 280) {
     alertLimitCharacters = { color: "#F7317C" }
   }
@@ -17,14 +24,18 @@ function Home() {
     if (message.length > 280) {
       alert("Arrête d'écrire un pavé !!!!!!!")
     } else {
+      dispatch(newTweet({message: message, isLiked: false}))
+
       setMessage('')
     }
-
   }
 
-  const handleLogOut = () => {
-    console.log('Tu sors !')
-  }
+    // Affichage des nouvelles tâches pas importantes
+    let addedTweets = tweets.map((data, i) => {  
+      return (
+        <LastTweet message={data.message} key={i} isLiked={data.isLiked} />
+      )}
+    );
 
   return (
     <div className={styles.homePage}>
@@ -32,6 +43,7 @@ function Home() {
         <div className={styles.logo}>
           <Image src='/logo.png' alt='rettiwT' height="50" width="50"/>
         </div>
+        <FontAwesomeIcon icon={faTrash} onClick={() => dispatch(deleteAllTweets())} />
           <LogOut />
       </div>
       <div className={styles.tweetCol}>
@@ -46,6 +58,9 @@ function Home() {
             <p><span style={alertLimitCharacters}>{message.length}</span> / 280</p>
             <button type="submit" className={styles.tweetButton} onClick={() => handleTweet()}>Tweet</button>
           </div>
+        </div>
+        <div className={styles.addTweet}>
+          { addedTweets.reverse() }
         </div>
 
         <Tweet />

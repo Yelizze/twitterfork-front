@@ -20,9 +20,12 @@ export const tweetSlice = createSlice({
     deleteTweet: (state, action) => {
       state.value = state.value.filter(item => item.message !== action.payload.message);
     },
+    deleteAllTweets: (state) => {
+      state.value = []
+    },
   }
 });
 
 // Pas le même actions que dans l'init du reducer (un "s" en plus)
-export const { newTweet, deleteTweet } = tweetSlice.actions;
+export const { newTweet, deleteTweet, deleteAllTweets } = tweetSlice.actions;
 export default tweetSlice.reducer;
