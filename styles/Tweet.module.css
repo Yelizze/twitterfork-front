@@ -84,6 +84,8 @@
   /* justify-content: space-around; */
   /* margin: 0 50px; */
   gap: 150px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .trashIcon {

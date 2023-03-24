@@ -37,7 +37,9 @@
   height: 40px;
   width: 60%;
 }
-
+.modalContainer input:invalid {
+  background-color: red;
+}
 .modalContainer button {
   height: 30px;
   width: 150px;

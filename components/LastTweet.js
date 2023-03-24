@@ -70,8 +70,8 @@ function LastTweet(props) {
           width="70"
         />
         <p>
-          <span className={styles.userName}>{username}</span>{" "}
-          <span className={styles.userTag}>@{username}</span>
+          <span className={styles.userName}>{username}</span> <br />
+          <span className={styles.userTag}>. @{username}</span>
         </p>
         <FontAwesomeIcon
           icon={faTrash}

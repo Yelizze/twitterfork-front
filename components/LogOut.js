@@ -5,18 +5,21 @@ import { logout } from "../reducers/user";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 
-function LogOut() {
+function LogOut(props) {
   const dispatch = useDispatch();
   const handleLogout = () => {
     dispatch(logout());
+    console.log(user.username);
+    console.log(user.firstname);
   };
   const user = useSelector((state) => state.user.value);
+  const username = useSelector((state) => state.user.value.username);
   return (
     <div className={styles.logged}>
       <div className={styles.logoutContainer}>
-        <Image src="/profilepic.jpg" alt="nolE" height="50" width="50" />
+        <Image src="/profilpic2.jpg" alt="nolE" height="50" width="50" />
         <div className={styles.logoutInfo}>
-          <h4 className={styles.logName}>Test </h4>
+          <h4 className={styles.logName}>{username}</h4>
           <p> @{user.username}</p>
         </div>
       </div>

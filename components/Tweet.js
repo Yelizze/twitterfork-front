@@ -59,12 +59,12 @@ function Tweet() {
           width="70"
         />
         <p>
-          <span className={styles.userName}>nolE</span>{" "}
+          <span className={styles.userName}>nolE</span> <br />
           <span className={styles.userTag}>@nolE_ksum</span>
         </p>
       </div>
       <p>
-        TWEEEeeeeEET !!! avec un{" "}
+        Le dev front est bien mieux que le Back{" "}
         <span className={styles.hashtag}>#hashtag</span>
       </p>
       <div className={styles.tweetIcon}>
