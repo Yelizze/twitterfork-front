@@ -1,11 +1,11 @@
 import styles from '../styles/Home.module.css';
 import Image from "next/image";  
 import Tweet from '../components/Tweet'
+import LogOut from '../components/LogOut';
 import { useState } from 'react';
-import Link from 'next/link';
 
 function Home() {
-  const [message, setMessage] = useState(''); 
+  const [message, setMessage] = useState('');
 
   let alertLimitCharacters
 
@@ -32,12 +32,7 @@ function Home() {
         <div className={styles.logo}>
           <Image src='/logo.png' alt='rettiwT' height="50" width="50"/>
         </div>
-        <div className={styles.logged}>
-        <Image src='/profilepic.jpg' alt='nolE' height="50" width="50"/>
-        <p> nolE </p>
-        <p> @lonE_ksum</p>
-        <Link href="/home"><button onClick={() => handleLogOut()}>Logout</button></Link>
-        </div>
+          <LogOut />
       </div>
       <div className={styles.tweetCol}>
         <h2>Home</h2>
