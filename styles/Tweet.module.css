@@ -1,33 +1,73 @@
 .profilePic {
-    border-radius: 50%;
-    overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .tweetRow {
-    border-top: 1px solid #778193;
-    padding: 20px 10px;
+  border-top: 1px solid #778193;
+  padding: 20px 10px;
 }
 .tweetRow p {
-    margin: 18px 0;
+  margin: 18px 0;
 }
 .userHeader {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .userName {
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 15px;
 }
 .userTag {
-    color: #778193;
+  color: #778193;
 }
 .hashtag {
-    color: #1DA1F2;
-    font-weight: bold;
-    cursor: pointer;
+  color: #1da1f2;
+  font-weight: bold;
+  cursor: pointer;
 }
 .likeCount {
-    margin-left: 5px;
+  margin-left: 5px;
+}
+
+.logoutContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logoutInfo {
+  display: block;
+}
+.logoutInfo h4 {
+  font-family: Mont Heavy, sans-serif;
+}
+.logoutInfo p {
+  color: grey;
+}
+.logoutContainer img {
+  border-radius: 50%;
+}
+.logged {
+  width: 70%;
+  margin: 0 auto;
+}
+.logged button {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+  font-family: Mont Heavy, sans-serif;
+  margin: 15px 20px;
+  height: 30px;
+  width: 100px;
+}
+
+.logged button:hover {
+  color: white;
+  background-color: #1da1f2;
 }
