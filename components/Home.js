@@ -3,6 +3,7 @@ import Tweet from "../components/Tweet";
 import LogOut from "../components/LogOut";
 import LastTweet from "../components/LastTweet";
 import Link from "next/link";
+import { deleteTweet, deleteAllTweets } from "../reducers/tweets";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,6 +14,7 @@ import {
   faBookmark,
   faUser,
   faPlus,
+  faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { newTweet } from "../reducers/tweets";
@@ -35,6 +37,10 @@ function Home() {
 
       setMessage("");
     }
+  };
+
+  const handleDeleteAll = () => {
+    dispatch(deleteAllTweets());
   };
 
   // Affichage des nouvelles tâches pas importantes
@@ -85,6 +91,11 @@ function Home() {
       </div>
       <div className={styles.tweetCol}>
         <h2>Home</h2>
+        <FontAwesomeIcon
+          icon={faTrash}
+          className={styles.trashIcon}
+          onClick={() => handleDeleteAll()}
+        />
 
         <div className={styles.writeTweet}>
           <input

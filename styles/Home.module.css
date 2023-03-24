@@ -122,3 +122,13 @@
   color: grey;
   font-size: 0.8rem;
 }
+
+.trashIcon {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+}
+
+.trashIcon:hover {
+  color: #1da1f2;
+}

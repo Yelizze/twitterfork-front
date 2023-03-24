@@ -7,6 +7,7 @@
   border-top: 1px solid #778193;
   padding: 20px 10px;
   margin: 0 100px;
+  position: relative;
 }
 .tweetRow p {
   margin: 18px 0;
@@ -81,4 +82,14 @@
   /* justify-content: space-around; */
   margin: 0 50px;
   gap: 150px;
+}
+
+.trashIcon {
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  color: grey;
+}
+.trashIcon:hover {
+  color: #1da1f2;
 }
