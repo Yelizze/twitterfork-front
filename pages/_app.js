@@ -40,7 +40,7 @@ function App({ Component, pageProps }) {
       <Head>
         <title>Hackatweet</title>
       </Head>
-      <Login />
+
       <Component {...pageProps} />
     </PersistGate>
   </Provider>

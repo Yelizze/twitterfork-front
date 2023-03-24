@@ -7,9 +7,13 @@
     border-top: 1px solid #778193;
     padding: 20px 10px;
 }
+.tweetRow p {
+    margin: 18px 0;
+}
 .userHeader {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 .userName {
     font-weight: bold;

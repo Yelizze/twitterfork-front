@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Login.module.css";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Modal } from "antd";
 
 const Login = () => {
