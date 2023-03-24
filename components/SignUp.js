@@ -3,6 +3,7 @@ import styles from "../styles/SignUp.module.css";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../reducers/user"
+import Link from "next/link";
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ const SignUp = () => {
 			value={signUpUsername}/>
       <input type="password" placeholder="Password"  onChange={(e) => setSignUpPassword(e.target.value)} 
 			value={signUpPassword}/>
-      <button onClick={() => handleRegister}>Sign up</button>
+      <Link href="/home"><button onClick={() => handleRegister}>Sign up</button></Link>
     </div>
   );
 };

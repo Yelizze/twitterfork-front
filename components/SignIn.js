@@ -2,8 +2,8 @@ import React from "react";
 import styles from "../styles/SignIn.module.css";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../reducers/user"
-
+import { login } from "../reducers/user";
+import Link from "next/link"; 
 
 const SignIn = () => {
   const dispatch = useDispatch();
@@ -36,7 +36,8 @@ const SignIn = () => {
 			value={signInUsername}/>
       <input type="password" placeholder="Password"  onChange={(e) => setSignInPassword(e.target.value)} 
 			value={signInPassword}/>
-      <button onClick={() => handleConnection()}>Sign in</button>
+	<Link href="/home"><button onClick={() => handleConnection()}>Sign in</button></Link>
+      
     </div>
   );
 };
