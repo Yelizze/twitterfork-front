@@ -25,7 +25,9 @@ const Login = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.leftContainer}></div>
+      <div className={styles.leftContainer}>
+        <img src="./logo.png" alt="" />
+      </div>
       <div className={styles.rightContainer}>
         <div className={styles.connection}>
           <img src="./logo.png" alt="logo" />

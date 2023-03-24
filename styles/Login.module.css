@@ -7,6 +7,10 @@
   width: 40vw;
   background: url(../public/background.png) center/cover;
 }
+.leftContainer img {
+  height: 250px;
+  width: 250px;
+}
 .rightContainer {
   display: flex;
   justify-content: center;
