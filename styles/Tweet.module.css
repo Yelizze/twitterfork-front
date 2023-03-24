@@ -5,12 +5,14 @@
 
 .tweetRow {
   border-top: 1px solid #778193;
+  max-height: 100vh;
   padding: 20px 10px;
   margin: 0 100px;
   position: relative;
 }
 .tweetRow p {
   margin: 18px 0;
+  word-wrap: break-word;
 }
 .userHeader {
   display: flex;
@@ -80,7 +82,7 @@
 .tweetIcon {
   display: flex;
   /* justify-content: space-around; */
-  margin: 0 50px;
+  /* margin: 0 50px; */
   gap: 150px;
 }
 

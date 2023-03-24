@@ -1,7 +1,12 @@
 .homePage {
   display: flex;
 
+  overflow-x: hidden;
+
   height: 100vh;
+}
+.homePage::-webkit-scrollbar {
+  display: none;
 }
 .logo {
   display: flex;
@@ -10,7 +15,7 @@
   align-items: flex-start;
 
   height: 80%;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 .logo img {
@@ -20,7 +25,7 @@
 }
 .profileCol,
 .trendsCol {
-  width: 25%;
+  width: 30%;
   padding: 0 10px;
 }
 .profileCol {
@@ -34,6 +39,11 @@
 .tweetCol {
   width: 50%;
   border-right: 1px solid grey;
+  max-height: 100vh;
+  overflow: scroll;
+}
+.tweetCol::-webkit-scrollbar {
+  display: none;
 }
 
 .leftInfos {

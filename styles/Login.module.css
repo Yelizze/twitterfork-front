@@ -37,7 +37,6 @@
   margin: 25px 25px 0 25px;
   width: 50px;
   height: 50px;
-  transform: rotate(180deg);
 }
 
 .connection h1 {
@@ -136,4 +135,16 @@
   font-weight: 700;
   margin: 20px 0;
   cursor: pointer;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

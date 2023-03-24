@@ -137,6 +137,22 @@ function Home() {
             <span>#first</span>
             <p>1 Tweet</p>
           </div>
+          <div className={styles.trends}>
+            <span>#LaCapsule</span>
+            <p>4 Tweets</p>
+          </div>
+          <div className={styles.trends}>
+            <span>#DevWeb</span>
+            <p>2 Tweet</p>
+          </div>
+          <div className={styles.trends}>
+            <span>#ViveLeFront</span>
+            <p>42 Tweets</p>
+          </div>
+          <div className={styles.trends}>
+            <span>#F*ckLeBack</span>
+            <p>156 Tweets</p>
+          </div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
-import { deleteTweet, deleteAllTweets } from "../reducers/tweets";
+import { deleteTweet } from "../reducers/tweets";
 
 function LastTweet(props) {
   const dispatch = useDispatch();
@@ -55,9 +55,9 @@ function LastTweet(props) {
     retweetStyle = { color: "#00BA7C" };
   }
 
-  //   const handleDeleteOne = () => {
-  //     dispatch(deleteTweet());
-  //   };
+  const handleDeleteOne = () => {
+    dispatch(deleteTweet(props));
+  };
 
   return (
     <div className={styles.tweetRow}>
@@ -73,7 +73,11 @@ function LastTweet(props) {
           <span className={styles.userName}>{username}</span>{" "}
           <span className={styles.userTag}>@{username}</span>
         </p>
-        <FontAwesomeIcon icon={faTrash} className={styles.trashIcon} />
+        <FontAwesomeIcon
+          icon={faTrash}
+          className={styles.trashIcon}
+          onClick={() => handleDeleteOne()}
+        />
       </div>
       <p>{props.message}</p>
       <div className={styles.tweetIcon}>

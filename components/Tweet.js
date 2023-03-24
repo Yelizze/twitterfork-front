@@ -64,7 +64,7 @@ function Tweet() {
         </p>
       </div>
       <p>
-        TWEEEEEEEEEEEEEEEEEEET !!! avec un{" "}
+        TWEEEeeeeEET !!! avec un{" "}
         <span className={styles.hashtag}>#hashtag</span>
       </p>
       <div className={styles.tweetIcon}>
@@ -76,12 +76,12 @@ function Tweet() {
           />
         </div>
         <div>
-          <span className={styles.likeCount}> {likeCount} </span>
           <FontAwesomeIcon
             icon={faHeart}
             onClick={() => handleLike()}
             style={likeStyle}
           />
+          <span className={styles.likeCount}> {likeCount} </span>
         </div>
         <div>
           <FontAwesomeIcon
