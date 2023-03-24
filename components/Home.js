@@ -17,12 +17,10 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { newTweet } from "../reducers/tweets";
 
-
 function Home() {
-  const dispatch = useDispatch()
-  const [message, setMessage] = useState('');
-  const tweets = useSelector((state) => state.tweets.value)
-
+  const dispatch = useDispatch();
+  const [message, setMessage] = useState("");
+  const tweets = useSelector((state) => state.tweets.value);
 
   let alertLimitCharacters;
   if (message.length > 280) {
@@ -33,18 +31,16 @@ function Home() {
     if (message.length > 280) {
       alert("Arrête d'écrire un pavé !!!!!!!");
     } else {
-      dispatch(newTweet({message: message, isLiked: false}))
+      dispatch(newTweet({ message: message, isLiked: false }));
 
-      setMessage('')
+      setMessage("");
     }
-  }
+  };
 
-    // Affichage des nouvelles tâches pas importantes
-    let addedTweets = tweets.map((data, i) => {  
-      return (
-        <LastTweet message={data.message} key={i} isLiked={data.isLiked} />
-      )}
-    );
+  // Affichage des nouvelles tâches pas importantes
+  let addedTweets = tweets.map((data, i) => {
+    return <LastTweet message={data.message} key={i} isLiked={data.isLiked} />;
+  });
 
   return (
     <div className={styles.homePage}>
@@ -81,7 +77,9 @@ function Home() {
             <FontAwesomeIcon icon={faPlus} className={styles.leftIcons} />
             Plus
           </span>
-          <button className={styles.leftBtn} onClick={() => handleTweet()}>Tweeter</button>
+          <button className={styles.leftBtn} onClick={() => handleTweet()}>
+            Tweeter
+          </button>
         </div>
         <LogOut />
       </div>
@@ -112,9 +110,7 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className={styles.addTweet}>
-          { addedTweets.reverse() }
-        </div>
+        <div className={styles.addTweet}>{addedTweets.reverse()}</div>
 
         <Tweet />
         <Tweet />
