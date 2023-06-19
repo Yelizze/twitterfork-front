@@ -143,7 +143,7 @@ function Home() {
           </div>
           <div className={styles.trends}>
             <span>#DevWeb</span>
-            <p>2 Tweet</p>
+            <p>2 Tweets</p>
           </div>
           <div className={styles.trends}>
             <span>#ViveLeFront</span>

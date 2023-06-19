@@ -68,13 +68,7 @@ function Tweet() {
         <span className={styles.hashtag}>#hashtag</span>
       </p>
       <div className={styles.tweetIcon}>
-        <div>
-          <FontAwesomeIcon
-            icon={faComment}
-            onClick={() => handleComment()}
-            style={CommentStyle}
-          />
-        </div>
+        <div></div>
         <div>
           <FontAwesomeIcon
             icon={faHeart}
