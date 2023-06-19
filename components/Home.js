@@ -91,11 +91,11 @@ function Home() {
       </div>
       <div className={styles.tweetCol}>
         <h2>Home</h2>
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
           icon={faTrash}
           className={styles.trashIcon}
           onClick={() => handleDeleteAll()}
-        />
+        /> */}
 
         <div className={styles.writeTweet}>
           <input
