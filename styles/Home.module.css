@@ -29,7 +29,9 @@
 .trendsCol {
   width: 30%;
   padding: 0 10px;
+  display: none;
 }
+
 .profileCol {
   display: flex;
   flex-direction: column;
