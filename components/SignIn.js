@@ -35,7 +35,7 @@ const SignIn = () => {
           );
           setSignInUsername("");
           setSignInPassword("");
-          location.assign("https://twitterfork-back.vercel.app/home");
+          location.assign("https://twitterfork-front.vercel.app/home");
           console.log(data.firstname);
         }
       });

@@ -36,7 +36,7 @@ const SignUp = () => {
           setSignUpFirstName("");
           setSignUpUsername("");
           setSignUpPassword("");
-          location.assign("https://twitterfork-back.vercel.app/home");
+          location.assign("https://twitterfork-front.vercel.app/home");
         }
       });
   };
