@@ -13,19 +13,21 @@ export const tweetSlice = createSlice({
       let tweet = {
         user: action.payload.user,
         message: action.payload.message,
-        isLiked: action.payload.isLiked
-      }
-      state.value.push(tweet)
+        isLiked: action.payload.isLiked,
+      };
+      state.value.push(tweet);
     },
     deleteTweet: (state, action) => {
-      state.value = state.value.filter(item => item.message !== action.payload.message);
+      state.value = state.value.filter(
+        (item) => item.message !== action.payload.message
+      );
     },
     deleteAllTweets: (state) => {
-      state.value = []
+      state.value = [];
     },
-  }
+  },
 });
 
-// Pas le même actions que dans l'init du reducer (un "s" en plus)
+// Pas le mêe actions que dans l'init du reducer (un "s" en plus)
 export const { newTweet, deleteTweet, deleteAllTweets } = tweetSlice.actions;
 export default tweetSlice.reducer;
