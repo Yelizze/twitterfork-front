@@ -174,4 +174,7 @@
   .profileCol {
     display: none;
   }
+  .tweetCol {
+    width: 100%;
+  }
 }
