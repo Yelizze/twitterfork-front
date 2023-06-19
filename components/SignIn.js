@@ -13,7 +13,7 @@ const SignIn = () => {
 
   const handleConnection = () => {
     console.log("error");
-    fetch("twitterfork-back.vercel.app/users/signin", {
+    fetch("https://twitterfork-back.vercel.app/users/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -35,7 +35,7 @@ const SignIn = () => {
           );
           setSignInUsername("");
           setSignInPassword("");
-          location.assign("twitterfork-back.vercel.app/home");
+          location.assign("https://twitterfork-back.vercel.app/home");
           console.log(data.firstname);
         }
       });
