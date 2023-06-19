@@ -131,7 +131,7 @@ function Home() {
         <div className={styles.trendContainer}>
           <div className={styles.trends}>
             <span>#Hackatweet</span>
-            <p>2 Tweets</p>
+            <p>3 Tweets</p>
           </div>
           <div className={styles.trends}>
             <span>#first</span>
